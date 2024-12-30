@@ -1,0 +1,13 @@
+### Note: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+### model
+model_name_or_path: /mnt/publiccache/huggingface/Meta-Llama-3-8B-Instruct
+adapter_name_or_path: /mnt/publiccache/yphao/model/apibank/apibank_mix_llama3_instruct_CITI_wo_MOLoRA
+template: llama3
+finetuning_type: lora
+
+### export
+export_dir: /mnt/publiccache/yphao/model/apibank/apibank_mix_llama3_instruct_CITI_wo_MOLoRA_export
+export_size: 6
+export_device: cpu
+export_legacy_format: false

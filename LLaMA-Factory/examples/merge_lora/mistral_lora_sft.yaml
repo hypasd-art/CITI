@@ -1,0 +1,13 @@
+### Note: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+### model
+model_name_or_path: /mnt/publiccache/huggingface/Mistral-7B-Instruct-v0.2
+adapter_name_or_path: /mnt/publiccache/yphao/model/toolalpaca/toolalpaca_mistral_instruct_lora
+template: mistral_tool
+finetuning_type: lora
+
+### export
+export_dir: /mnt/publiccache/yphao/model/toolalpaca/toolalpaca_mistral_instruct_lora_export
+export_size: 6
+export_device: cpu
+export_legacy_format: false

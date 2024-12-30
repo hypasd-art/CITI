@@ -1,0 +1,13 @@
+### Note: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+### model
+model_name_or_path: /mnt/publiccache/huggingface/Phi-3-mini-128k-instruct
+adapter_name_or_path: /mnt/publiccache/yphao/model/apibank/apibank_phi3_instruct_lora_wo_special_token
+template: phi_apibank
+finetuning_type: lora
+
+### export
+export_dir: /mnt/publiccache/yphao/model/apibank/apibank_phi3_instruct_lora_wo_special_token_export
+export_size: 6
+export_device: cpu
+export_legacy_format: false
